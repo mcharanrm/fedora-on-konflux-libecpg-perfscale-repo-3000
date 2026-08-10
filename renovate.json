@@ -1,0 +1,20 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "tekton": {
+    "managerFilePatterns": [
+      "/(^|/)\\.tekton/.*\\.ya?ml$/"
+    ]
+  },
+  "customManagers": [
+    {
+      "customType": "regex",
+      "managerFilePatterns": [
+        "/(^|/)\\.tekton/.*\\.ya?ml$/"
+      ],
+      "matchStrings": [
+        "name:\\s*bundle\\s*\\n\\s*value:\\s*(?<depName>[^\\s:@]+(?:/[^\\s:@]+)+):(?<currentValue>[^@\\s]+)@(?<currentDigest>sha256:[a-f0-9]+)"
+      ],
+      "datasourceTemplate": "docker"
+    }
+  ]
+}
