@@ -18,6 +18,8 @@ metadata:
   namespace: konflux-perfscale-2-tenant
 spec:
   params:
+  - name: tekton-bundle-image
+    value: quay.io/cmusali/tekton-bundle-resolver-benchmarks:latest@sha256:566aeba96bc448853fa5417467473e9af483ac52ed39e778c7d8f68d3b18a7d4
   - name: git-url
     value: '{{source_url}}'
   - name: revision
