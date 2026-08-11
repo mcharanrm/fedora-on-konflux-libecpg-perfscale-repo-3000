@@ -22,7 +22,7 @@ spec:
     pipeline: "6h"
   params:
     - name: bundle
-      value: quay.io/cmusali/tekton-bundle-resolver-benchmarks:latest@sha256:566aeba96bc448853fa5417467473e9af483ac52ed39e778c7d8f68d3b18a7d4
+      value: quay.io/cmusali/tekton-bundle-resolver-benchmarks:latest@sha256:eebf0f9af2e989256068e73b0af219c17831ae677dea005e31a3ceabd33391e6
     - name: package-name
       value: libecpg
     - name: git-url
